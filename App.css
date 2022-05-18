@@ -1,0 +1,756 @@
+/*general sizing help*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+}
+
+.headerContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.loginContainer{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: space-evenly;
+height: 100vh;
+}
+
+form {
+  display: block;
+  position: relative;
+  height: 80vh;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #707070;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding: 0 20px 0 15px;
+  margin-top: 0.5%;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+
+/* Header en footer styling */
+
+
+
+/* alle styling voor de navbar */
+.Menubarlinks nav ul {
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  font-weight: bold;
+  color: #707070;
+  text-decoration: none;
+  display: flex;
+  min-width: 40%;
+  max-width: 100%;
+  margin: 2%;
+  justify-content: flex-end;
+}
+
+.Menubarlinks{
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-top: 0.5%;
+}
+
+/* ^^^ */
+
+.Menubarlinks a:hover {
+  border-bottom: 5px solid #707070;
+}
+
+/* Footer styling */
+
+.Footer{
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #707070;
+  text-decoration: none;
+  display: flex;
+  margin: 1%;
+}
+
+.Footer a:hover {
+  border-bottom: 5px solid #707070;
+}
+
+
+
+/* ALLE VERSCHILLENDE PAGINAS HIERONDER AAN BIJVULLEN */
+
+
+
+/* LOGIN PAGINA */
+
+
+ 
+/* LOGIN: Box rondom de Login*/
+form .form-inner {
+  display: block;
+  background-color: white;
+  padding: 30px;
+  max-width: 500px;
+  left: 460px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 550px;
+  min-width: 500px;
+  border: 2px solid #707070;
+  box-shadow: 12px 12px 4px 0px rgb(212, 212, 212);
+  border-radius: none;
+}
+
+/* LOGIN: "Login" woord boven "Email" label */
+form .form-inner h2 {
+  color: #666;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+ 
+/* LOGIN: Marges input boxes van email en password */
+form .form-inner .form-group {
+  display: block;
+  width: 438px;
+  margin-bottom: 15px;
+}
+ 
+/* LOGIN: Input Box "Email" en "Password" */
+form .form-inner .form-group label {
+  display: block;
+  color: #666;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+ 
+/* LOGIN: Woorden "Email" en "Password" veranderen van kleur OnClick v.d. input box*/
+form .form-inner .form-group:focus-within label {
+  color: #FFFFFF;
+}
+ 
+/* LOGIN: Input Box "email" en "password" */
+form .form-inner .form-group input {
+  display: block;
+  width: 100%;
+  margin-left: 10px;
+  padding: 15px 20px;
+  background-color: #e6e6e6;
+  border-radius: 60px;
+  transition: 0.4s;
+}
+ 
+/* LOGIN: Border effect bij "email" en "password" */
+form .form-inner .form-group input:focus {
+  box-shadow: 0px  0px 8px #2C6697;
+}
+
+/* LOGIN: LoginButton */
+.loginbutton{
+  display: inline-block;
+  padding: 10px 220px;
+  border-radius: 60px;
+  margin: 0px 0px 0px 10px;
+  background-image: linear-gradient(to right, #2C6697, #2C6697, #22416F);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* LOGIN: LoginButton Transition bij het Hoveren */
+.loginbutton:hover {
+  background-position: 100% 0%;
+}
+
+/*Animation Loginbutton*/
+.loginbutton:active{
+  display: flex;
+  background-color: #24416F;
+  box-shadow: 0px 0px 1px #666;
+  transform: translateY(4px);
+}
+
+/* REGISTER: RegistrerenButton */
+.RegistrerenButton {
+  display: inline-block;
+  max-width: 478px;
+  padding: 10px 196.8px;
+  border-radius: 60px;
+  margin: 0px 0px 0px 10px;
+  background-image: linear-gradient(to right, #2C6697, #2C6697, #22416F);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*Animation Loginbutton*/
+.RegistrerenButton:active{
+  display: flex;
+  background-color: #24416F;
+  box-shadow: 0px 0px 1px #666;
+  transform: translateY(4px);
+}
+ 
+/* REGISTER: RegistrerenButton Transition bij het Hoveren */
+.RegistrerenButton:hover {
+  background-position: 100% 0%;
+}
+
+/*LOGIN "Registreer hier" knop*/
+.registreren{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 170px;
+  color: #22416F;
+  cursor: pointer;
+}
+.registreren:hover{
+  transform: translateY(-1px);
+}
+.wachtwoord{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: #22416F;
+  cursor:pointer
+}
+.wachtwoord:hover{
+  transform: translateY(-1px);
+}
+
+
+
+/*HOME PAGINA */
+
+
+
+/* dit zijn de dimensions en codes van achtergrond grey box */
+
+.rectangle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  Height: auto;
+  background-color: #f3f3f3;
+}
+
+  
+/* dit is om de font en locatie te fixen */
+.mainText {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  padding: 10%;
+}
+
+/* dit is de button voor plan je gesprek */
+
+.PlanGesprekButton {
+  
+  display: flex;
+  flex-flow:column nowrap;
+  background-color: #24416F; /* donkerblauw */
+  border: none;
+  color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 60px;
+}
+/*Maakt button animatie*/
+
+.PlanGesprekButton:active{
+  display: flex;
+  background-color: #24416F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*comment aub jay: Geen idee*/
+
+
+/* OVER ONS PAGINA  */
+
+
+
+/* grijze box over ons pagina */
+.rectangleOverOns{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  Height: auto;
+  background-color: #f3f3f3;
+}
+
+/*OVERONS: Teksts 1*/
+.informatie_overons_1{
+  font-size: 30px;
+  padding-bottom: 5%;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.informatie_overons_1_foto{
+position: relative;
+display: flex;
+justify-content: right;
+width: 50%;
+margin-right: 50px;
+margin-top: 20px;
+}
+.overOnsText1{
+  width: 50%;
+  padding-right: 10%;
+  margin:20px
+}
+
+/*OVERONS: Teksts 2*/
+.informatie_overons_2{
+  font-size: 30px;
+  width: 100%;
+  padding-bottom: 5%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.informatie_overons_2_foto{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.overOnsText2{
+  width: 50%;
+  margin: 0px 20px 0px 0px;
+}
+
+/*OVERONS: Teksts 3*/
+.informatie_overons_3{
+  font-size: 30px;
+  padding-bottom: 5%;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.informatie_overons_3_foto{
+  position: relative;
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  margin: 50px;
+}
+.overOnsText3{
+  width: 50%;
+  margin:20px
+}
+
+.Menubarlinks nav ul {
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding-bottom: 5%;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.informatie_overons_4_foto{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  margin: 50px;
+}
+.overOnsText4{
+  width: 50%;
+  margin:20px
+}
+
+
+
+/* PlAN JE GESPREK PAGINA*/
+
+
+
+/* Container van alles in de rectangle */
+.PJGContainer{
+  flex-flow: column nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+/* zoekbalk */
+.search-container{
+  height: auto;
+  margin: 2%;
+  width: 100%
+  }
+.search-container input{
+  width: 75%;
+  height: 125%;
+  border-radius: 60px;
+  border-style:none;
+  text-align: center;
+  font-weight: bold;
+  color: #707070;
+}
+
+/* Zoeken knop */
+.PJGZoeken {
+  cursor: pointer;
+  display: flex;
+  flex-flow:column nowrap;
+  background-color: #24416F; /* donkerblauw */
+  border: none;
+  color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 60px;
+}
+.PJGZoeken:active{
+  display: flex;
+  background-color: #24416F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tagBoxContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* Box met alle tags erin */
+.tagBox{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 50%;
+  Height:90%;
+  background-color: white;
+  margin: 2%;
+  border-radius: 25px;
+}
+
+.tagBox2{
+  display: flex;
+  justify-content: center;
+  Height: 90%;
+  width: 50%;
+  background-color: white;
+  margin: 2%; 
+  border-radius: 25px; 
+}
+
+input {
+  display: flex;
+  flex: 1;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 22px;
+  padding: 4px 0 0 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  outline: transparent;
+  border-radius: 10px;
+}
+
+#tags {
+	display: flex;
+	flex-wrap: wrap;
+  width: 100%;
+	padding: 0;
+	margin: 8px 0 0 0;
+}
+.tag {
+	width: auto;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 0 8px;
+	font-size: 15px;
+  font-weight:500;
+	list-style: none;
+	border-radius: 6px;
+	margin: 0 8px 8px 0;
+	background: #22416F;
+	margin-top: 10px;
+}
+
+.tagStyling{
+  display: flex;
+  flex-flow: row wrap;
+  text-decoration: none;
+  max-width: 1000px;
+}
+
+.material-icons{
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px #ddd solid;
+  margin-right: 4px;
+}
+
+.checkboxContainer{
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 20px 0px 20px 0px;
+}
+.opslaanButton{
+display: inline-block;
+  padding: 10px 150px;
+  border-radius: 60px;
+  margin: 0px 0px 0px 10px;
+  background-image: linear-gradient(to right, #2C6697, #2C6697, #22416F);
+  background-size: 200%;
+  background-position: 0%;
+  transition: 0.4s;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+
+/* CONTACT PAGINA*/
+
+
+
+/* Contact rectangle */
+.rectangleContact {
+  display: flex;
+  width: 50%;
+  min-width: 40%;
+  max-width: 100%;
+  margin-top: 2%;
+  justify-content: space-evenly;
+  float: right;
+  
+}
+
+.viewheightcontainer{
+  height: 79vh;
+  justify-content: center;
+}
+
+
+
+/* PROFIEL PAGINA */
+
+
+
+/* Witte box profiel pagina */
+.profielBox{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-flow: column nowrap;
+  background-color: white;
+  padding: 30px;
+  margin: 30px auto;
+  overflow: auto;
+  height: 700px;
+  width: 500px;
+  border: 2px solid #707070;
+  box-shadow: 12px 12px 4px 0px rgb(212, 212, 212);
+  border-radius: none;
+}
+
+.profielContainer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profielInfo{
+  margin: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.profielLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.changeInputBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+/* 404 PAGE */
+
+
+a{
+  text-decoration: none;
+  color: #707070;
+
+}
+
+/* ^^^ */
+
+.Menubarlinks a:hover {
+  border-bottom: 5px solid #707070;
+}
+.overons_box {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  background-color: white;
+  padding: 30px;
+  margin: 30px 30px 30px 30px;
+  height: auto;
+  width: auto;
+  border: 2px solid #707070;
+  border-radius: 60px;
+}
+.overons_titel {
+  text-align: center;
+}
+/* alles voor de tags */
+.tags-input {
+  position: relative;
+	display: flex;
+  box-sizing: border-box;
+	align-items:flex-start;
+  flex-flow: row nowrap;
+	flex-wrap: wrap;
+  max-width: 1000px;
+	min-height: 160px;
+	padding: 0 20px;
+	border-radius: 6px;
+}
+.checkboxProfile {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px #ddd solid;
+}
+
+.checkboxContainerProfile{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:center;
+  width: 100%;
+}
